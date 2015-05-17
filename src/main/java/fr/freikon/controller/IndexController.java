@@ -30,4 +30,9 @@ public class IndexController {
     public String getImg(@PathVariable String img, @PathVariable String type) {
         return "/assets/images/" + img + "." + type;
     }
+
+    @RequestMapping("/favicon.ico")
+    public String getFavicon() {
+        return "/assets/images/favicon.ico";
+    }
 }
